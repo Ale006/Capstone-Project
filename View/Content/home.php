@@ -149,12 +149,6 @@ $graficoE=PersonalController::Egrafico();
                                     <div class="stat-icon dib flat-color-2">
                                         <i class="pe-7s-users"></i>
                                     </div>
-                                    <div class="stat-content">
-                                        <div class="text-left dib">
-                                            <div class="stat-text"><?php foreach($JJBoggio as $j):?><span class="count"><?=$j['cantidad']?></span><?php endforeach?></div>
-                                            <div class="stat-heading">Personal JJBOGGIO</div>
-                                        </div>
-                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -167,12 +161,6 @@ $graficoE=PersonalController::Egrafico();
                                     <div class="stat-icon dib flat-color-2">
                                         <i class="pe-7s-users"></i>
                                     </div>
-                                    <div class="stat-content">
-                                        <div class="text-left dib">
-                                            <div class="stat-text"><?php foreach($Sideruk as $s):?><span class="count"><?=$s['cantidad']?></span><?php endforeach?></div>
-                                            <div class="stat-heading">Personal SIDERUK</div>
-                                        </div>
-                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -184,12 +172,6 @@ $graficoE=PersonalController::Egrafico();
                                 <div class="stat-widget-five">
                                     <div class="stat-icon dib flat-color-2">
                                         <i class="pe-7s-users"></i>
-                                    </div>
-                                    <div class="stat-content">
-                                        <div class="text-left dib">
-                                            <div class="stat-text"><?php foreach($Yermedic as $y):?><span class="count"><?=$y['cantidad']?></span><?php endforeach?></div>
-                                            <div class="stat-heading">Personal YERMEDIC</div>
-                                        </div>
                                     </div>
                                 </div>
                             </div>
