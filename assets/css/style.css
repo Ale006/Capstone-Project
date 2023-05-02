@@ -346,6 +346,11 @@ Googel Fonts  */
   transition: all 0.3s ease; }
 
 body {
+  /* 3 lineas para poner en modo oscuro
+  background-color: "Canvas";
+  color: "CanvasText";
+  color-scheme: "light-dark";
+  */
   display: table;
   font-family: "Open Sans", sans-serif;
   font-size: 16px;
