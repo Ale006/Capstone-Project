@@ -47,7 +47,7 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Natural Centric 1.0</title>
+    <title>Natural Centric 1.1</title>
     <meta name="description" content="Grupo6-Capstone Admin - HTML5">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     
@@ -86,7 +86,7 @@
                     <form>
                         <div class="form-group">
                             <label>Usuario</label>
-                            <input type="text" class="form-control" name="username" placeholder="Nombre de usuario" required>
+                            <input type="text" class="form-control" name="username" placeholder="usuario" required>
                         </div>
                         <div class="form-group">
                             <label>Contraseña</label>
