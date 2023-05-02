@@ -48,11 +48,13 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Natural Centric 1.0</title>
-    <meta name="description" content="Ela Admin - HTML5 Admin Template">
+    <meta name="description" content="Grupo6-Capstone Admin - HTML5">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     
-    <!-- Logo, letra "e"-->
-   <!-- <link rel="apple-touch-icon" href="https://i.imgur.com/QRAUqs9.png"> -->
+    <!-- Logo ejemplo letra "e"=https://i.imgur.com/QRAUqs9-->
+
+    <!-- Logo oficial del sitio web=https://i.imgur.com/QRAUqs9-->
+   <link rel="apple-touch-icon" href="https://imgur.com/eF4N1Tr">
    
    <!-- Logo de la pagina-->
     <link rel="shortcut icon" href="assets/images/Favicon.PNG">
