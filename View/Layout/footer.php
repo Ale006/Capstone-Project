@@ -3,9 +3,9 @@
 <div class="clearfix"></div>
         <!-- Footer -->
         <footer class="site-footer">
-            <div class="footer-inner bg-white">
+            <div class="footer-inner" style="background-color: #FF9900;">
                 <div class="row">
-                    <div class="col-sm text-center">
+                    <div class="col-sm text-center text-dark">
                         Copyright &copy; 2023 Natural Centric
                     </div>
                 </div>
