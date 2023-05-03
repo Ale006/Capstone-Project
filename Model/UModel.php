@@ -5,7 +5,7 @@ class UsuariosModel{
 
     static public function prelogin($user,$clave,$tabla)
     {
-        $sql="SELECT unick,upass,fk_estado FROM $tabla WHERE unick='$user' AND upass='$clave'";
+        $sql="SELECT username,password FROM $tabla WHERE username='$user' AND password='$clave'";
         $cn=Conexion::conectar()->prepare($sql);
         $cn->execute();
         return $cn->fetchAll();
@@ -14,6 +14,32 @@ class UsuariosModel{
         $cn=NULL;
     }
 
+    /* PRIMERA BD
+    static public function prelogin($user,$clave,$tabla)
+    {
+        $sql="SELECT unick,upass,fk_estado FROM $tabla WHERE unick='$user' AND upass='$clave'";
+        $cn=Conexion::conectar()->prepare($sql);
+        $cn->execute();
+        return $cn->fetchAll();
+
+        $cn->close();
+        $cn=NULL;
+    }*/
+
+    static public function login($user,$clave,$tabla)
+    {
+        $sql="SELECT * FROM $tabla WHERE username='$user' AND password='$clave'";
+        $cn=Conexion::conectar()->prepare($sql);
+        $cn->execute();
+        if($cn->execute()){
+            return 'ok';
+        }
+
+        $cn->close();
+        $cn=NULL;
+    }
+
+    /* primera BD
     static public function login($user,$clave,$tabla)
     {
         $sql="SELECT * FROM $tabla WHERE unick='$user' AND upass='$clave'";
@@ -25,7 +51,7 @@ class UsuariosModel{
 
         $cn->close();
         $cn=NULL;
-    }
+    }*/
 
     static public function datosuser($user,$tabla)
     {

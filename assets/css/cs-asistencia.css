@@ -1,7 +1,6 @@
 *{
     margin: 0;
     padding: 0;
-    background-image: url(images/FondoNaturaleza.png);
     box-sizing: border-box;
     background-position: center center;
     background-repeat: no-repeat;
@@ -9,6 +8,8 @@
     background-attachment: fixed;
 }
 body{
+    background-image: url("assets/images/FondoNaturaleza.png");
+    background-size: cover;
     font-family: 'Nunito Sans', sans-serif;
 }
 h1{

@@ -10,6 +10,48 @@
         {
             foreach($comprobacion as $plog)
             {
+                $userbd=$plog['username'];
+                $clavebd=$plog['password'];
+                //$estadodb=$plog['fk_estado'];
+            }
+            if($userbd==$user&&$clavebd==$clave)
+            {
+                $login = UsuariosController::login($user,$clave);
+            }
+            else
+            {
+                echo '
+                <div class="container">
+                    <div class="alert alert-danger" role="alert">
+                        Usuario no habilitado!
+                    </div>
+                </div>';
+            }
+        }
+        else
+        {
+            echo '
+            <div class="container">
+                <div class="alert alert-danger" role="alert">
+                    Usuario o contraseña incorrecta!
+                </div>
+            </div>';
+        }
+    }
+?>
+
+<?php /*    PRIMERA  BD
+    require_once 'Controller/UController.php';
+    if(isset($_POST['username']) && !empty($_POST['username']) && isset($_POST['claveuser']) && !empty($_POST['claveuser']))
+    {
+        $user=$_POST['username'];
+        $clave=$_POST['claveuser'];
+        // comprovacion de usuario
+        $comprobacion = UsuariosController::prelogin($user,$clave);
+        if($comprobacion >=1 && $comprobacion !=NULL)
+        {
+            foreach($comprobacion as $plog)
+            {
                 $userbd=$plog['unick'];
                 $clavebd=$plog['upass'];
                 $estadodb=$plog['fk_estado'];
@@ -37,8 +79,11 @@
                 </div>
             </div>';
         }
-    }
+    } */
 ?>
+
+
+
 <!doctype html>
 <!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang=""> <![endif]-->
 <!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8" lang=""> <![endif]-->

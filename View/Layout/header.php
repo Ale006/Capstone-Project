@@ -52,7 +52,7 @@
             <div id="main-menu" class="main-menu collapse navbar-collapse">
                 <ul class="nav navbar-nav">
                     <li class="active">
-                        <a href="body.php"><i class="menu-icon fa fa-home"></i>Inicio</a>
+                        <a href="asistenciahora.php"><i class="menu-icon fa fa-home"></i>Inicio</a>
                     </li>
                     <?php if($_SESSION['rol']==1 ||$_SESSION['rol']!=1):?>
                     <li class="menu-title">RRHH</li><!-- /.menu-title -->
