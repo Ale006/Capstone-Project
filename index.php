@@ -79,7 +79,7 @@
             <div class="login-content">
                 <div class="login-logo">
                     <a href="index.html">
-                        <img class="align-content" src="assets/images/Logo_natural.PNG" alt="">
+                        <img class="align-content" src="assets/images/naturalcentric.png" alt="">
                     </a>
                 </div>
                 <div class="login-form">

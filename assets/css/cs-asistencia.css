@@ -1,0 +1,83 @@
+*{
+    margin: 0;
+    padding: 0;
+    background-image: url(FondoNaturaleza.avif);
+    box-sizing: border-box;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    
+}
+body{
+    
+    font-family: 'Nunito Sans', sans-serif;
+    
+}
+h1{
+    text-align: center;
+    margin-top: 200px;
+    padding: 20px;
+    font-size: 40px;
+    color: rgb(56, 56, 56);
+}
+#fecha{
+    text-align: center;
+    color: rgb(148, 148, 148);
+    font-weight: normal;
+    font-size: 30px;
+}
+.container{
+    width: 700px;
+    background: rgb(181, 233, 104);
+    text-align: center;
+    padding: 20px;
+    margin: auto;
+    margin-top: 20px;
+    border-radius: 50px;
+}
+.acceso{
+    background: rgb(238, 188, 95);
+    border-radius: 50px;
+    padding: 10px;
+    text-decoration: none;
+}
+.dni{
+    text-align: center;
+    font-size: 25px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    background: rgb(181, 233, 104);
+}
+input{
+    width: 100%;
+    padding: 30px;
+    outline: none;
+    border-radius: 50px;
+}
+.botones{
+    display: flex;
+    margin-top: 20px;
+    background: rgb(181, 233, 104);
+}
+.entrada{
+    background: rgb(62, 62, 240);
+    width: 100%;
+    padding: 25px 35px;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 50px;
+}
+.salida{
+    background: rgb(245, 61, 61);
+    width: 100%;
+    padding: 25px 35px;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 50px;
+}
+.fondo{
+    background: rgb(181, 233, 104);
+}
