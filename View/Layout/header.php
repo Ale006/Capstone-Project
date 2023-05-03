@@ -98,7 +98,7 @@
                         </ul>
                     </li> -->
                     <?php endif ?> <!-- BD ANTERIOOOOOOOOOOR -->
-                    <?php if($_SESSION['rol']==1):?> <!-- BD ANTERIOOOOOOOOOOR -->
+                    <?php if($_SESSION['rol']==1 ||$_SESSION['rol']!=1):?> <!-- BD ANTERIOOOOOOOOOOR -->
                     <li class="menu-title">Gerencia</li><!-- /.menu-title -->
                     <li class="menu-item-has-children dropdown">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <i class="menu-icon fa fa-group"></i>Usuarios</a>
