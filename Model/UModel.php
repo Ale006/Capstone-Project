@@ -55,7 +55,7 @@ class UsuariosModel{
 
     static public function datosuser($user,$tabla)
     {
-        $sql="SELECT *,substring(uname,1,1) AS 'inicial' FROM $tabla WHERE unick='$user'";
+        $sql="SELECT *,substring(username,1,1) AS 'inicial' FROM $tabla WHERE username='$user'";
         $cn=Conexion::conectar()->prepare($sql);
         $cn->execute();
         return $cn->fetchAll();
@@ -63,6 +63,18 @@ class UsuariosModel{
         $cn->close();
         $cn=NULL;
     }
+
+    /* PRIMERA BD
+    static public function datosuser($user,$tabla)
+    {
+        $sql="SELECT *,substring(uname,1,1) AS 'inicial' FROM $tabla WHERE unick='$user'";
+        $cn=Conexion::conectar()->prepare($sql);
+        $cn->execute();
+        return $cn->fetchAll();
+
+        $cn->close();
+        $cn=NULL;
+    } */
 
     static public function roles($tabla)
     {

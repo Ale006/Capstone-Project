@@ -4,10 +4,17 @@
         $usuario = $_SESSION['user'];
         $login = UsuariosController::log($usuario);
     }
+    /* BD ANTERIOOOOR
     foreach($login as $key => $log){
         $_SESSION['rol'] = $log['fk_rol'];
         $_SESSION['inicial']=$log['inicial'];
         $_SESSION['nombre_usuario'] = $log['uname'];
+    }*/
+
+    foreach($login as $key => $log){
+        $_SESSION['rol'] = $log['fk_personal_u'];
+        $_SESSION['inicial']=$log['inicial'];
+        $_SESSION['nombre_usuario'] = $log['username'];
     }
     // Cierre de sesion
     if(isset($_GET['cerrar']) && $_GET['cerrar'] == 'ok'){
@@ -52,9 +59,9 @@
             <div id="main-menu" class="main-menu collapse navbar-collapse">
                 <ul class="nav navbar-nav">
                     <li class="active">
-                        <a href="asistenciahora.php"><i class="menu-icon fa fa-home"></i>Inicio</a>
+                        <a href="body.php"><i class="menu-icon fa fa-home"></i>Inicio</a>
                     </li>
-                    <?php if($_SESSION['rol']==1 ||$_SESSION['rol']!=1):?>
+                    <?php if($_SESSION['rol']==1 ||$_SESSION['rol']!=1):?> <!-- BD ANTERIOOOOOOOOOOR -->
                     <li class="menu-title">RRHH</li><!-- /.menu-title -->
                     <li class="menu-item-has-children dropdown">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <i class="menu-icon fa fa-users"></i>Personal</a>
@@ -66,11 +73,23 @@
                     <li class="menu-item-has-children dropdown">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <i class="menu-icon fa fa-clock-o"></i>Horarios</a>
                         <ul class="sub-menu children dropdown-menu">
-                            <li><i class="fa fa-clock-o"></i><a href="body.php?page=horarioAdmin">Administrativos</a></li>
+                            <li><i class="fa fa-clock-o"></i><a href="asistenciahora.php">Control Asistencia</a></li>
                             <li><i class="fa fa-clock-o"></i><a href="body.php?page=horarioOp">Operacion</a></li>
                             <li><i class="fa fa-clock-o"></i><a href="body.php?page=Asistencias">Asistencias</a></li>
                         </ul>
                     </li>
+
+                    <!-- PRIMERA BD
+                        <li><i class="fa fa-clock-o"></i><a href="body.php?page=horarioAdmin">Administrativos</a></li>
+                            <li><i class="fa fa-clock-o"></i><a href="body.php?page=horarioOp">Operacion</a></li>
+                            <li><i class="fa fa-clock-o"></i><a href="body.php?page=Asistencias">Asistencias</a></li> -->
+
+
+
+
+
+
+
                     <!-- <li class="menu-item-has-children dropdown">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <i class="menu-icon fa fa-usd"></i>Pagos</a>
                         <ul class="sub-menu children dropdown-menu">
@@ -78,8 +97,8 @@
                             <li><i class="menu-icon fa fa-usd"></i><a href="body.php?page=pagosOpe">Semanales</a></li>
                         </ul>
                     </li> -->
-                    <?php endif?>
-                    <?php if($_SESSION['rol']==1):?>
+                    <?php endif ?> <!-- BD ANTERIOOOOOOOOOOR -->
+                    <?php if($_SESSION['rol']==1):?> <!-- BD ANTERIOOOOOOOOOOR -->
                     <li class="menu-title">Gerencia</li><!-- /.menu-title -->
                     <li class="menu-item-has-children dropdown">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <i class="menu-icon fa fa-group"></i>Usuarios</a>
@@ -97,7 +116,7 @@
                             <li><i class="menu-icon fa fa-pie-chart"></i><a href="charts-peity.html">Peity Chart</a></li>
                         </ul>
                     </li> -->
-                    <?php endif?>
+                    <?php endif ?> <!-- BD ANTERIOOOOOOOOOOR -->
                 </ul>
             </div><!-- /.navbar-collapse -->
         </nav>
